@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+   background: url(https://uploads-ssl.webflow.com/5eb6c518ccd7e71d49519db8/5fbc31356dfee64003b5ae81_anders-jilden-AkUR27wtaxs-unsplash.jpg) no-repeat center fixed;
+   background-size: cover;
+  }
+  .container{
+      background-color: #3a18181c;
+      max-width: 600px;
+      width: 100%;
+      height: 20rem;
+      padding: 40px ;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      backdrop-filter: blur( 5px );
+      -webkit-backdrop-filter: blur( 5px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      overflow: hidden;
+    }
+    .container img{
+        position:absolute;
+        top: 0.5em;
+        left: 0.5em;
+        width: 20%;;
+        opacity: 0.8;
+    }
+    #quotes{
+      left: 0.8em;
+      right: 0.8em;
+      top: 2.8em;
+        position: absolute;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Ephesis;
+        color: rgb(255, 255, 255);
+    }
+#author{
+    position: absolute;
+    top: 10em;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Dancing Script;
+    color: rgba(255, 255, 255, 0.772);
+}
+  #quoteBtn{
+      margin-top: 7em;
+    height: 45px;
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Explora;
+    border-radius: 5px;
+   letter-spacing: 1px;
+   background-color: rgba(255, 255, 255, 0.186);
+   color: white;
+   flex-wrap: nowrap;
+   outline: none;
+   transition-property: all;
+   transition-duration: 700ms;
+  }
+  #quoteBtn:hover{
+    background-color: rgba(255, 255, 255, 0.405);
+    transform: translateY(8px);
+  }
+  #block{
+      position: absolute;
+      top: -3.9em;
+      right: -4.2em;
+      width: 8rem;
+      height: 8rem;
+     border-radius: 100%;
+      background-color: rgba(255, 255, 255, 0.172);
+      justify-content: center;
+      text-align: center;
+  }
+  .fa-twitter{
+      margin-top: 1.8em;
+      margin-left: -1.4em;
+      font-size: 2.5em;
+      transition-property: all;
+      transition-duration: 800ms;
+  }
+  .fa-twitter:hover{
+   transform: scale(0.8)  rotate(45deg);;
+  }
+
+  @media(max-width: 584px){
+.container{
+ max-width: 100%;
+}
+#quotes{
+    width: auto;
+    height: 7em;
+    overflow: scroll;
+    margin-top: 1em;
+    font-size: 20px;
+    font-weight: 500;
+}
+#author{
+    top: 13em;
+    font-size: 16px;
+}
+.fa-twitter{
+    transition: none;
+}
+.fa-twitter:hover{
+    transform: none;
+}
+#quoteBtn{
+    margin-top: 13em;
+    font-size: 16px;
+}
+#quoteBtn:hover{
+    background-color: rgba(255, 255, 255, 0.186);
+    transform: none;
+  }
+  }

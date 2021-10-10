@@ -9,7 +9,6 @@
   }
   body{
     height: 100vh;
-    overflow-y: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,12 +107,12 @@
     height: 7em;
     overflow: scroll;
     margin-top: 1em;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
 }
 #author{
     top: 13em;
-    font-size: 16px;
+    font-size: 17px;
 }
 .fa-twitter{
     transition: none;

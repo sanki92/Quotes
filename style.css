@@ -13,8 +13,8 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-   background: url(https://uploads-ssl.webflow.com/5eb6c518ccd7e71d49519db8/5fbc31356dfee64003b5ae81_anders-jilden-AkUR27wtaxs-unsplash.jpg) no-repeat center fixed;
-   background-size: cover;
+    background: url(https://images.pexels.com/photos/1405708/pexels-photo-1405708.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center fixed;
+    background-size: cover;
   }
   .container{
       background-color: #3a18181c;
@@ -99,6 +99,10 @@
   }
 
   @media(max-width: 584px){
+    body{
+        background: url(https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?cs=srgb&dl=pexels-irina-iriser-1381679.jpg&fm=jpg) no-repeat center fixed;
+        background-size: cover;
+    }
 .container{
  max-width: 100%;
 }
